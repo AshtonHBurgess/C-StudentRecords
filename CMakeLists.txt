@@ -3,4 +3,4 @@ project(ASSIGN3 C)
 
 set(CMAKE_C_STANDARD 17)
 
-add_executable(ASSIGN3 src/main.c)
+add_executable(ASSIGN3 src/main.c inc/StudentRecordHeader.h src/studentRecord.c)
