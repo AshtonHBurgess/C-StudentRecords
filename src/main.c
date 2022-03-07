@@ -5,28 +5,41 @@
 
 
 int main()
-{
-//    //Sample
-//    struct data person;
-//    Student(person);
-//
 
-    //Student 1
+{
+
+    setbuf(stdout,0);
+
+
+
     struct StudentRecord record1;
-    createStudentRecord(record1);
-//    //Student 2
+    createStudentRecord(&record1);
+    reportStudent(&record1);
+
+
+
     struct StudentRecord record2;
-    createStudentRecord(record2);
+    createStudentRecord(&record2);
+    reportStudent(&record2);
+
+
 
     struct StudentRecord record3;
-    createStudentRecord(record3);
+    createStudentRecord(&record3);
+    reportStudent(&record3);
 
-    struct StudentRecord *record=&record1;
 
-//
-//    reportWithPoint(record1);
-//    reportWithPoint(record2);
-//    reportWithPoint(record3);
+
+printf("***************************************************REPORT CARDS******************************************************\n\n\n");
+    reportStudent(&record1);
+     reportStudent(&record2);
+    reportStudent(&record3);
+
+
+
+
+
+
 
     return 0;
 }

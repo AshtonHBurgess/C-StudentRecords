@@ -26,24 +26,13 @@ struct StudentRecord
 
 };
 
-struct data{
-
-    int age;
-    int ID_Num;
-    char name[30];
-};
-
-void createStudentRecord(struct StudentRecord record);
-
-void reportStudent(struct StudentRecord record);
-
-float calculateAverage(struct StudentRecord record);
-
-void reportWithPoint(struct StudentRecord *record);
 
 
-void report(struct data person);
-void Student(struct data person);
+void createStudentRecord(struct StudentRecord *record);
+
+void reportStudent(struct StudentRecord *record);
+
+float calculateAverage(struct StudentRecord *record);
 
 #endif //ASSIGN3_STUDENTRECORDHEADER_H
 
